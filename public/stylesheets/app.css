@@ -1,0 +1,295 @@
+.title {
+  font-family: "Righteous", cursive;
+  color: white;
+}
+
+.small {
+  font-size: 1rem;
+}
+
+.normal {
+  font-size: 1.5rem;
+}
+
+.large {
+  font-size: 2rem;
+}
+
+.x-large {
+  font-size: 3rem;
+}
+
+.text {
+  font-family: "Roboto", cursive;
+  color: #BEBEBE;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.text-signup {
+  font-family: "Roboto", cursive;
+  color: red;
+}
+
+@media screen and (min-width: 768px) {
+  .x-large {
+    font-size: 5rem;
+  }
+
+  .small {
+    font-size: 1.5rem;
+  }
+
+  .text {
+    font-family: "Roboto", cursive;
+    color: #BEBEBE;
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .x-large {
+    font-size: 5rem;
+  }
+
+  .small {
+    font-size: 1.5rem;
+  }
+
+  .text {
+    font-family: "Roboto", cursive;
+    color: #BEBEBE;
+    font-size: 1.8rem;
+  }
+
+  .align-center {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .x-large {
+    font-size: 5rem;
+  }
+
+  .small {
+    font-size: 1.5rem;
+  }
+
+  .text {
+    font-family: "Roboto", cursive;
+    color: #BEBEBE;
+    font-size: 1.8rem;
+  }
+
+  .align-center {
+    text-align: center;
+  }
+}
+body {
+  overflow-y: hidden;
+}
+
+.wrapper {
+  max-width: 960px;
+  /* 2 */
+  padding-right: 10px;
+  /* 3 */
+  padding-left: 10px;
+  /* 3 */
+}
+
+.w-25 {
+  width: 25%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-75 {
+  width: 75%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.hb-25 {
+  margin-bottom: 5%;
+}
+
+.hb-50 {
+  margin-bottom: 10%;
+}
+
+.hb-75 {
+  margin-bottom: 15%;
+}
+
+.hb-100 {
+  margin-bottom: 20%;
+}
+
+.h-25 {
+  margin-top: 5%;
+}
+
+.h-50 {
+  margin-top: 10%;
+}
+
+.h-75 {
+  margin-top: 25%;
+}
+
+.h-100 {
+  margin-top: 50%;
+}
+
+@media screen and (max-width: 415px) {
+  .center {
+    max-width: 10rem;
+    margin: auto;
+  }
+
+  .left {
+    max-width: 18rem;
+  }
+
+  .right {
+    max-width: 3rem;
+  }
+
+  .flex {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 768px) {
+  .center {
+    max-width: 16rem;
+    margin: auto;
+  }
+
+  .flex {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .wrapper {
+    max-width: 960px;
+    /* 2 */
+    padding-right: 100px;
+    /* 3 */
+    padding-left: 100px;
+    /* 3 */
+  }
+}
+@media screen and (min-width: 1024px) {
+  .center {
+    max-width: 19rem;
+    margin: auto;
+    margin-top: -35%;
+  }
+
+  .wrapper {
+    max-width: 960px;
+    /* 2 */
+    padding-right: 200px;
+    /* 3 */
+    padding-left: 170px;
+    /* 3 */
+  }
+}
+@media screen and (min-width: 1280px) {
+  .center {
+    max-width: 16rem;
+    margin: auto;
+    margin-top: -35%;
+  }
+
+  .wrapper {
+    max-width: 960px;
+    /* 2 */
+    padding-right: 200px;
+    /* 3 */
+    padding-left: 360px;
+    /* 3 */
+  }
+}
+.btn {
+  font-family: "Amiko", sans-serif;
+  background: linear-gradient(360deg, #30333a 0%, #393e44 100%);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  margin-left: 20px;
+}
+
+.btn-previous {
+  font-family: "Amiko", sans-serif;
+  background: linear-gradient(360deg, #30333a 0%, #393e44 100%);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.btn-login {
+  font-family: "Amiko", sans-serif;
+  background: linear-gradient(360deg, #F73311 0%, #B03A25 100%);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  min-width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .btn {
+    font-family: "Amiko", sans-serif;
+    background: linear-gradient(360deg, #30333a 0%, #393e44 100%);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    margin-left: 50px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .btn {
+    font-family: "Amiko", sans-serif;
+    background: linear-gradient(360deg, #30333a 0%, #393e44 100%);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    margin-left: 50px;
+    margin-top: 150%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .btn {
+    font-family: "Amiko", sans-serif;
+    background: linear-gradient(360deg, #30333a 0%, #393e44 100%);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    margin-left: 50px;
+    margin-top: 250%;
+  }
+}
+.input-login {
+  background: linear-gradient(360deg, #30333a 0%, #393e44 100%);
+  border-radius: 10px;
+  padding: 12px;
+  border: none;
+  color: white;
+}
+
+/*# sourceMappingURL=app.css.map */
