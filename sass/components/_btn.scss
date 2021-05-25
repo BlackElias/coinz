@@ -9,7 +9,7 @@ $background-color: linear-gradient(360deg, rgba(48,51,58,1) 0%, rgba(57,62,68,1)
     padding: 10px;
     margin-left: 20px;
 }
-.btn-previous{
+.btn__previous{
     font-family: $text-font;
     background: $background-color;
     color: white;
@@ -18,7 +18,7 @@ $background-color: linear-gradient(360deg, rgba(48,51,58,1) 0%, rgba(57,62,68,1)
     padding: 10px;
    
 }
-.btn-login{
+.btn__login{
     font-family: $text-font;
     background: linear-gradient(360deg, #F73311 0%, #B03A25 100%);;
     color: white;

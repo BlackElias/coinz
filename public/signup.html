@@ -14,26 +14,28 @@
 </head>
 
 <body style="background-color: #282B30;">
+    <form action="" method="post">
     <div class="left"><a href="index.html" class=""><button
-                class="btn-previous normal align-center ">&larr;</button></a> </div>
+                class="btn__previous normal align-center ">&larr;</button></a> </div>
 
     <div class="flex wrapper form h-75 alert">
         <h1 class="title large center ">Sign up</h1>
         <label for="" class="text ">Name:</label>
-        <input type="email" name="" id=""class="input-login hb-25" placeholder="rnumber@student.thomasmore.be">
+        <input type="name" name="" id="name"class="input-login hb-25" placeholder="rnumber@student.thomasmore.be">
         
 
         <label for="" class="text ">Email:</label>
-        <input type="email" name="" id=""class="input-login hb-25" placeholder="rnumber@student.thomasmore.be">
+        <input type="email" name="" id="" class="input-login hb-25" placeholder="rnumber@student.thomasmore.be">
 
         <label for="" class="text ">Password:</label>
-        <input type="email" name="" id="" class="input-login hb-25 " placeholder="Enter your password">
-        <div class=""><a href="#" class="" ><button class="btn-login small align-center ">Sign up</button></a> </div>
+        <input type="password" name="" id="password" class="input-login hb-25 " placeholder="Enter your password">
+        <input type="submit" class="btn-login small align-center " id="btn-signup" value="Submit">
     </div>
-    
+    </form>
    
 
 </body>
-<script src="login.js"></script>
+
 
 </html>
+<script src="../routes/api/signup.js"></script>
