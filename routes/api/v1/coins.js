@@ -1,25 +1,10 @@
 const express = require ('express');
 const router = express.Router();
+const coinsController = require('../../../controllers/api/v1/coins');
 
 /* /api/v1/coins */
-router.get("/", (req, res) =>{
-    res.json({
-        "status": "success",
-        "data": {
-            "coins":[]
-        }
-    });
-});
 
-router.post("/", (req, res) =>{
-    res.json({
-        "status": "success",
-        "data": {
-            "coins": {
-                "amount": 40
-            }
-        }
-    });
-});
+router.get("/", coinsController.getAll);
+router.post("/",coinsController.create);
 
 module.exports = router;
