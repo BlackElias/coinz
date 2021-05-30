@@ -4,8 +4,11 @@ const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const cors = require('cors');
+
 const indexRouter = require('./routes/api/index');
 const usersRouter = require('./routes/api/users');
+const apiCoinsRouter = require('./routes/api/v1/coins');
+
 const mongoose = require('mongoose');
 const passport =require('./passport/passport');
 mongoose.set('useCreateIndex', true);
@@ -22,8 +25,11 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(cors());
+
+
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use('/api/v1/coins', apiCoinsRouter);
 
 //TODO route van webtoken of je alles mag krijgen passport.authenticate('jwt', { session: false });
 // catch 404 and forward to error handler
