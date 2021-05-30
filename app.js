@@ -32,7 +32,7 @@ app.use(cors());
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-app.use('/api/v1/coins', apiCoinsRouter);
+app.use('/coins', apiCoinsRouter);
 
 //TODO route van webtoken of je alles mag krijgen passport.authenticate('jwt', { session: false });
 // catch 404 and forward to error handler
