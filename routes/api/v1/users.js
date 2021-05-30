@@ -7,16 +7,9 @@ router.get('/', function(req, res, next) {
 });
 
 /*get signup*/
-router.post('/signup', (req, res, next) =>{
-  //signup
-  //username uit request
-  //ww uit request
-  //bcrypt encrypt
-  //databank
+router.post('/signup', authController.signup);
 
-});
-
-router.post('/login',auth.login);
+router.post('/login',authController.login);
 
 
 module.exports = router;

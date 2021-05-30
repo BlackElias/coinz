@@ -6,10 +6,11 @@ const logger = require('morgan');
 const cors = require('cors');
 
 const indexRouter = require('./routes/api/index');
-const usersRouter = require('./routes/api/users');
+const usersRouter = require('./routes/api/v1/users');
 const apiCoinsRouter = require('./routes/api/v1/coins');
 
 const mongoose = require('mongoose');
+mongoose.set('useCreateIndex', true);
 mongoose.connect('mongodb://localhost:27017/Curro',
 {useNewUrlParser: true, useUnifiedTopology: true});
 const passport =require('./passport/passport');
