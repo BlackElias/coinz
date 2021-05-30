@@ -1,13 +1,4 @@
-const mongoose = require('mongoose');
-const Schema = mongoose.Schema;
-const coinSchema = new Schema({
-    amount: Number,
-    text: {type: String, required: true},
-    sender: String,
-    receiver: String,
-    date: { type: Date, default: Date.now }
-});
-const Coins = mongoose.model('Coins', coinSchema);
+const Coins = require('../../../models/Coins');
 
 const getAll = (req, res) =>{
     res.json({
@@ -20,10 +11,10 @@ const getAll = (req, res) =>{
 
 const create =  (req, res) =>{
     let coin = new Coins();
-    coin.amount = 5;
-    coin.sender = "Rani";
-    //coin.text = "first try";
-    coin.receiver = "Joris";
+    coin.amount = req.body.amout;
+    coin.sender = req.body.sender;
+    coin.text = req.body.text;
+    coin.receiver = req.body.receiver;
     coin.save((err, doc) =>{
         if(err){
             res.json({
