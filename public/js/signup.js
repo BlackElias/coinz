@@ -1,15 +1,13 @@
-var btnSignup = document.guerySelector("#btn-login").addEventListener("click", function(){
-let email= document.querySelector('#email').value; 
-let password = document.guerySelector('#password').value;
-let name = document.guerySelector('#name').value;  
-fetch('http://localhost:3000/users/signup', {
+var btnSignup = document.querySelector("#btn-signup").addEventListener("click", function(){
+let password = document.querySelector('#password').value;
+let username = document.querySelector('#username').value;  
+fetch('http://localhost:3000/signup', {
      method: "post",
       headers: { 'Content-Type': 'application/json'
 }, 
     body: JSON.stringify({ 
-        "username": email, 
+        "username": username, 
         "password": password,
-        "name": name 
     })
  }).then(response =>{
      return response.json();
