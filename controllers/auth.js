@@ -1,5 +1,5 @@
-const User = require('../../models/User');
-const passport = require('../../passport/passport');
+const User = require('../models/User');
+const passport = require('../passport/passport');
 const jwt = require('jsonwebtoken');
 
 
